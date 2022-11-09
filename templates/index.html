@@ -1,0 +1,19 @@
+<!doctype html>
+<title>Python Flask File Upload Example</title>
+<h1>Vehicle Exterior Defect Detection System</h1>
+
+<h2>Select a file to upload</h2>
+
+{% if filename %}
+	<div>
+		<img src="{{ url_for('static', filename='/Images/pred_img/'+filename) }}">
+	</div>
+{% endif %}
+<form method="post" action="/" enctype="multipart/form-data">
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
