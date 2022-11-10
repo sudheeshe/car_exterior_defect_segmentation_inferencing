@@ -69,12 +69,30 @@ Let's see some sample from training data
 
 ## Video Demo
 
-[click here](https://www.youtube.com/watch?v=oRXxbZ7rxrI&ab_channel=SudheeshE)
+[click here](https://www.youtube.com/watch?v=JV4_exl785M&ab_channel=SudheeshE)
 
 
 ## References:
-#### How to do training and inferencing 
-[click here](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/How_to_run.txt)
 
-#### YoloV5 custom training helper repo
-[click here](https://github.com/sudheeshe/YoloV5_Custom_training_template)
+#### TFOD 1.X custom training helper repo
+[click here](https://github.com/sudheeshe/TFOD_1_Custom_Instance_Segmenation_Template)
+
+
+## Improvements needed 
+
+- Need more images for better performance of the model. And we can also do Image Augmentations for better generalized model
+- Some of `False Positives (Ability of model not to give false predictions)` and `False Negatives (Ability of the model to detect all the ground truth)` by the model are
+- `False Positives` are given in `Red` marks and `False Negatives` are given in `Yellow`.
+
+![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/9_.jpg?raw=true)
+
+### Note:
+
+- I'm currently unable to do find the performance metrics for the model which I have developed. Due to the issue related to TFOD 1.x.
+- We can find the mAP(Mean Average Precision) and mAR (Mean Average Recall) of the model by running `models/research/object_detection/legacy/eval.py` or `models/research/object_detection/model_main.py` file.
+- But in TFOD 1.X we have a problem of `excess memory usage` issue. Due to this the programs crashes.
+
+![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/10_.jpg?raw=true)
+
+[click here detailed demo](https://youtu.be/q7W9b4X4ymg)
+
