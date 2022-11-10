@@ -1,40 +1,33 @@
 
 # Car Exterior Defect Detection
 
-![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/3.jpg?raw=true)
+![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/1_.jpg?raw=true)
 
-### What is PCB ...??
+### Artificial Intelligence in Vehicle Inspection.
 
-- `Printed circuit boards (PCBs)` are the foundational building block of most modern electronic devices.  
-- Whether simple single layered boards used in your garage door opener, to the six layer board in your smart watch, to a 60 layer, very high density and high-speed circuit boards used in super computers and servers, printed circuit boards are the foundation on which all of the other electronic components are assembled onto.
+- Inspections are critical throughout a vehicle’s lifespan. Nonetheless, vehicle inspections can be time-consuming. 
+- By combining AI in the car inspection business, we can automate inspections in vehicles on various stages – manufacturing, shipping, bought/sold, renting, and repair – and determinate the vehicle condition at a specific point in time. So, Artificial intelligence is changing the entire car inspection process, with an immediate return on your investment
+- Automatic Vehicle Inspection saves time, reduce costs, and improve reliability of car inspection businesses.
+- With artificial intelligence, it’s possible to identifies and classifies damages in vehicles, and estimation of repair costs according to damage location and characteristics.
+- The best… the process can be done in real time on site, or the images can be collected and be processed afterwards. This makes the process of vehicle inspection cost-efficient an improve the business reliability.
 
-![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/1.jpg?raw=true)
-
-- Compared to traditional wired circuits, PCBs offer a number of advantages. Their small and lightweight design is appropriate for use in many modern devices, while their reliability and ease of maintenance suit them for integration in complex systems. 
-- Additionally, their low cost of production makes them a highly cost-effective option.
 
 ## Business Scenario
 
-- The Client is looking for an Effective PCB defects detection System which detect the following defects.
+- The Client is looking for an Effective Car Exterior Defect Detection System which detect the following defects.
 
-        1. missing_hole
-        2. mouse_bite
-        3. open_circuit
-        4. short
-        5. spur
-        6. spurious_copper
-
+        1. Paint Scratches
+        2. Dents
+      
 
 ## Data Understanding
 
-- The available dataset have total 485 images for Training.
-- 139 images for Validation and 69 images are provided for testing
-- On an average 90 images per 6 defect class.
+- The available dataset have total 459 images for Training and 61 images for Validation 
 
 
 Let's see some sample from training data
 
-![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/4.jpg?raw=true)
+![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/2_.jpg?raw=true)
 
 
 ## Data Labeling
