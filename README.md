@@ -39,13 +39,9 @@ Let's see some sample from training data
 
 ## Model Building and Evaluation
 
-- Used `mask_rcnn_inception_v2_coco` model for segmentation.
+- Used `mask_rcnn_inception_v2_coco` model for segmentation from TFOD 1.X.
 - `mask_rcnn_inception_v2_coco` trained from scratch to 30000 epochs on Paperspace P4000 GPU.
-- Let's see the `loss` during the beginning of training
-
-![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/4_.jpg?raw=true)
-
-- The loss for `10000 epochs` reached to `1.982`.
+- The loss for `8000 epochs` reached to `1.982` from `5.5`.
 
 ![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/5_.jpg?raw=true)
 
@@ -58,7 +54,7 @@ Let's see some sample from training data
 
 ## Prediction Images
 
-- An UI is used for individual predictions by uploading the image
+- UI is used for individual predictions by uploading the image
 
 ![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/7_.jpg?raw=true)
 
@@ -81,7 +77,7 @@ Let's see some sample from training data
 ## Improvements needed 
 
 - Need more images for better performance of the model. And we can also do Image Augmentations for better generalized model
-- Some of `False Positives (Ability of model not to give false predictions)` and `False Negatives (Ability of the model to detect all the ground truth)` by the model are
+- Some of `False Positives (Ability of model not to give false predictions)` and `False Negatives (Ability of the model to detect all the ground truth)` by the model are given below
 - `False Positives` are given in `Red` marks and `False Negatives` are given in `Yellow`.
 
 ![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/9_.jpg?raw=true)
