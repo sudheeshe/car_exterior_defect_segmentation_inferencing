@@ -39,29 +39,13 @@ Let's see some sample from training data
 
 ## Model Building and Evaluation
 
-- Used YoloV5 model for detection.
-- YoloV5 trained from scratch to 1500 epochs on Paperspace P4000 GPU.
-- YoloV5 does image augmentation internally on training images which helps in better predictions and reduce overfitting.
+- Used `mask_rcnn_inception_v2_coco` model for segmentation.
+- `mask_rcnn_inception_v2_coco` trained from scratch to 30000 epochs on Paperspace P4000 GPU.
+- Let's see the `loss` during the beginning of training
+- 
+![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/4_.jpg?raw=true)
 
-![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/6.jpg?raw=true)
-
-Let's visualize some of our `training image batch` and `validation image batch`
-
-#### Training image batch with Mosaic augmentation applied
-
-![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/train_tile_batch.jpg?raw=true)
-
-#### Validation image batch
-
-![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/val_tile_batch.jpg?raw=true)
-
-
-- Let's see the `mAP` for first `100 epochs`. The mAP was `0.0086`
-
-![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/Reports/100_epoch_eport.png?raw=true)
-
-
-- The mAP for `1500 epochs` reached to `0.811` at mAP@0.5 (means mAP at threshold of 0.5). 
+- The loss for `10000 epochs` reached to `0.811` at mAP@0.5 (means mAP at threshold of 0.5). 
 - I've tried to run the model for another 200 epochs but the model didn't show any improvement in mAP beyond 1500 epochs.
 
 #### Precision-Recall Curve
