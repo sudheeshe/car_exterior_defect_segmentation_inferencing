@@ -32,9 +32,9 @@ Let's see some sample from training data
 
 ## Data Labeling
 
-- Labeling was done with `LabelImg` tool and labels are saved on `.txt` format
+- Labeling was done with `Labelme` tool and labels are saved on `.json` format
 
-![alt text](https://github.com/sudheeshe/PCB_Defect_Detection_Training/blob/main/imgs_readme/5.jpg?raw=true)
+![alt text](https://github.com/sudheeshe/car_exterior_defect_segmentation_inferencing/blob/main/readme_imgs/3_.jpg?raw=true)
 
 
 ## Model Building and Evaluation
